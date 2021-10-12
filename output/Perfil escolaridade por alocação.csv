@@ -1,0 +1,160 @@
+"alocação";"Escolaridade";"ano";"n";"perc"
+"Centro de acolhimento";"sem escolaridade";"2013";392;0,00167109307391603
+"Centro de acolhimento";"fundamental incompleto";"2013";6713;0,028617468890812
+"Centro de acolhimento";"fundamental completo";"2013";7268;0,0309834297480145
+"Centro de acolhimento";"medio incompleto";"2013";3089;0,0131683839421597
+"Centro de acolhimento";"medio completo";"2013";24279;0,103501195769406
+"Centro de acolhimento";"superior incompleto";"2013";2969;0,0126568248378997
+"Centro de acolhimento";"superior completo";"2013";12518;0,0533641405593899
+"Centro de acolhimento";"especializacao";"2013";1700;0,00724708731035012
+"Centro de acolhimento";"mestrado";"2013";130;0,000554189029615009
+"Centro de acolhimento";"doutorado";"2013";28;0,000119363790994002
+"Centro POP";"sem escolaridade";"2013";3;0,000374531835205993
+"Centro POP";"fundamental incompleto";"2013";83;0,0103620474406991
+"Centro POP";"fundamental completo";"2013";107;0,0133583021223471
+"Centro POP";"medio incompleto";"2013";57;0,00711610486891386
+"Centro POP";"medio completo";"2013";639;0,0797752808988764
+"Centro POP";"superior incompleto";"2013";203;0,0253433208489388
+"Centro POP";"superior completo";"2013";708;0,0883895131086142
+"Centro POP";"especializacao";"2013";106;0,0132334581772784
+"Centro POP";"mestrado";"2013";7;0,000873907615480649
+"Centro POP";"doutorado";"2013";1;0,000124843945068664
+"CRAS";"sem escolaridade";"2013";145;0,000550968374415309
+"CRAS";"fundamental incompleto";"2013";3381;0,012847062578608
+"CRAS";"fundamental completo";"2013";3646;0,0138540047801256
+"CRAS";"medio incompleto";"2013";2199;0,00835572038165009
+"CRAS";"medio completo";"2013";22368;0,0849935213718733
+"CRAS";"superior incompleto";"2013";7341;0,0278941988729847
+"CRAS";"superior completo";"2013";31406;0,119335950116463
+"CRAS";"especializacao";"2013";4504;0,0171142176439072
+"CRAS";"mestrado";"2013";242;0,000919547217989687
+"CRAS";"doutorado";"2013";9;3,41980370326743e-05
+"CREAS";"sem escolaridade";"2013";72;0,00108996775512058
+"CREAS";"fundamental incompleto";"2013";619;0,0093706950058283
+"CREAS";"fundamental completo";"2013";711;0,0107634315818157
+"CREAS";"medio incompleto";"2013";403;0,00610079174046657
+"CREAS";"medio completo";"2013";4290;0,0649439120759344
+"CREAS";"superior incompleto";"2013";1678;0,0254023040707268
+"CREAS";"superior completo";"2013";10828;0,1639190396173
+"CREAS";"especializacao";"2013";2166;0,0327898632998774
+"CREAS";"mestrado";"2013";157;0,00237673524380459
+"CREAS";"doutorado";"2013";14;0,000211938174606779
+"Centro de acolhimento";"sem escolaridade";"2015";581;0,00247679866312554
+"Centro de acolhimento";"fundamental incompleto";"2015";8913;0,0379960524689121
+"Centro de acolhimento";"fundamental completo";"2015";10246;0,0436786215187337
+"Centro de acolhimento";"medio incompleto";"2015";4517;0,0192559372828538
+"Centro de acolhimento";"medio completo";"2015";34938;0,148940433205301
+"Centro de acolhimento";"superior incompleto";"2015";4117;0,0175507402686538
+"Centro de acolhimento";"superior completo";"2015";17808;0,0759153710721853
+"Centro de acolhimento";"especializacao";"2015";2474;0,0105466435328272
+"Centro de acolhimento";"mestrado";"2015";192;0,000818494566816014
+"Centro de acolhimento";"doutorado";"2015";38;0,000161993716349003
+"Centro POP";"sem escolaridade";"2015";8;0,000998751560549313
+"Centro POP";"fundamental incompleto";"2015";137;0,017103620474407
+"Centro POP";"fundamental completo";"2015";144;0,0179775280898876
+"Centro POP";"medio incompleto";"2015";82;0,0102372034956305
+"Centro POP";"medio completo";"2015";939;0,117228464419476
+"Centro POP";"superior incompleto";"2015";350;0,0436953807740325
+"Centro POP";"superior completo";"2015";1227;0,153183520599251
+"Centro POP";"especializacao";"2015";191;0,0238451935081149
+"Centro POP";"mestrado";"2015";28;0,0034956304619226
+"Centro POP";"doutorado";"2015";2;0,000249687890137328
+"CRAS";"sem escolaridade";"2015";144;0,000547168592522789
+"CRAS";"fundamental incompleto";"2015";3650;0,0138692039076957
+"CRAS";"fundamental completo";"2015";3671;0,0139489993274386
+"CRAS";"medio incompleto";"2015";2409;0,00915367457907916
+"CRAS";"medio completo";"2015";31585;0,120016111075224
+"CRAS";"superior incompleto";"2015";9090;0,0345400174030011
+"CRAS";"superior completo";"2015";36147;0,137350716068898
+"CRAS";"especializacao";"2015";4990;0,0189609116436717
+"CRAS";"mestrado";"2015";269;0,00102214132908771
+"CRAS";"doutorado";"2015";10;3,79978189251937e-05
+"CREAS";"sem escolaridade";"2015";42;0,000635814523820337
+"CREAS";"fundamental incompleto";"2015";618;0,00935555656478496
+"CREAS";"fundamental completo";"2015";684;0,0103546936736455
+"CREAS";"medio incompleto";"2015";410;0,00620676082776996
+"CREAS";"medio completo";"2015";4424;0,0669724631757422
+"CREAS";"superior incompleto";"2015";1685;0,0255082731580302
+"CREAS";"superior completo";"2015";11960;0,181055754878363
+"CREAS";"especializacao";"2015";2275;0,0344399533736016
+"CREAS";"mestrado";"2015";170;0,00257353497736803
+"CREAS";"doutorado";"2015";20;0,000302768820866827
+"Centro de convivência";"sem escolaridade";"2015";339;0,00270057118275458
+"Centro de convivência";"fundamental incompleto";"2015";4019;0,0320165061459902
+"Centro de convivência";"fundamental completo";"2015";4007;0,0319209107058927
+"Centro de convivência";"medio incompleto";"2015";2232;0,0177807518581364
+"Centro de convivência";"medio completo";"2015";18537;0,147671056090624
+"Centro de convivência";"superior incompleto";"2015";7054;0,0561941862039847
+"Centro de convivência";"superior completo";"2015";20597;0,164081606640697
+"Centro de convivência";"especializacao";"2015";3013;0,0240024217511491
+"Centro de convivência";"mestrado";"2015";346;0,00275633518947813
+"Centro de convivência";"doutorado";"2015";80;0,000637302933983382
+"Centro DIA";"sem escolaridade";"2015";115;0,00237299327307994
+"Centro DIA";"fundamental incompleto";"2015";1190;0,0245553216953489
+"Centro DIA";"fundamental completo";"2015";1228;0,025339441211671
+"Centro DIA";"medio incompleto";"2015";492;0,0101522842639594
+"Centro DIA";"medio completo";"2015";4484;0,0925261029260039
+"Centro DIA";"superior incompleto";"2015";1042;0,0215013825265156
+"Centro DIA";"superior completo";"2015";10436;0,215343980850976
+"Centro DIA";"especializacao";"2015";3283;0,0677437992654038
+"Centro DIA";"mestrado";"2015";178;0,00367298089224547
+"Centro DIA";"doutorado";"2015";36;0,00074285006809459
+"Centro de acolhimento";"sem escolaridade";"2017";597;0,00254500654369354
+"Centro de acolhimento";"fundamental incompleto";"2017";8885;0,0378766886779181
+"Centro de acolhimento";"fundamental completo";"2017";10253;0,0437084624664822
+"Centro de acolhimento";"medio incompleto";"2017";4794;0,0204367862151873
+"Centro de acolhimento";"medio completo";"2017";39801;0,169671365905438
+"Centro de acolhimento";"superior incompleto";"2017";4605;0,0196310806259778
+"Centro de acolhimento";"superior completo";"2017";19731;0,0841131057179519
+"Centro de acolhimento";"especializacao";"2017";2736;0,0116635475771282
+"Centro de acolhimento";"mestrado";"2017";221;0,000942121350345516
+"Centro de acolhimento";"doutorado";"2017";44;0,000187571671562003
+"Centro POP";"sem escolaridade";"2017";2;0,000249687890137328
+"Centro POP";"fundamental incompleto";"2017";108;0,0134831460674157
+"Centro POP";"fundamental completo";"2017";134;0,016729088639201
+"Centro POP";"medio incompleto";"2017";95;0,0118601747815231
+"Centro POP";"medio completo";"2017";917;0,114481897627965
+"Centro POP";"superior incompleto";"2017";276;0,0344569288389513
+"Centro POP";"superior completo";"2017";1235;0,1541822721598
+"Centro POP";"especializacao";"2017";201;0,0250936329588015
+"Centro POP";"mestrado";"2017";20;0,00249687890137328
+"CRAS";"sem escolaridade";"2017";179;0,000680160958760967
+"CRAS";"fundamental incompleto";"2017";3313;0,0125886774099167
+"CRAS";"fundamental completo";"2017";3457;0,0131358460024395
+"CRAS";"medio incompleto";"2017";2469;0,00938166149263032
+"CRAS";"medio completo";"2017";32947;0,125191414012836
+"CRAS";"superior incompleto";"2017";9116;0,0346388117322066
+"CRAS";"superior completo";"2017";38662;0,146907167528584
+"CRAS";"especializacao";"2017";5447;0,020697411968553
+"CRAS";"mestrado";"2017";346;0,0013147245348117
+"CRAS";"doutorado";"2017";31;0,0001177932386681
+"CREAS";"sem escolaridade";"2017";38;0,000575260759646972
+"CREAS";"fundamental incompleto";"2017";593;0,00897709553870142
+"CREAS";"fundamental completo";"2017";660;0,0099913710886053
+"CREAS";"medio incompleto";"2017";395;0,00597968421211984
+"CREAS";"medio completo";"2017";4420;0,0669119094115688
+"CREAS";"superior incompleto";"2017";1540;0,0233131992067457
+"CREAS";"superior completo";"2017";12459;0,18860983695899
+"CREAS";"especializacao";"2017";2482;0,0375736106695732
+"CREAS";"mestrado";"2017";219;0,00331531858849176
+"CREAS";"doutorado";"2017";25;0,000378461026083534
+"Centro de convivência";"sem escolaridade";"2017";323;0,00257311059595791
+"Centro de convivência";"fundamental incompleto";"2017";4083;0,0325263484931769
+"Centro de convivência";"fundamental completo";"2017";4073;0,032446685626429
+"Centro de convivência";"medio incompleto";"2017";2499;0,0199077504003059
+"Centro de convivência";"medio completo";"2017";20083;0,159986935289853
+"Centro de convivência";"superior incompleto";"2017";7164;0,0570704777382119
+"Centro de convivência";"superior completo";"2017";23115;0,184140716487824
+"Centro de convivência";"especializacao";"2017";3545;0,0282404862621386
+"Centro de convivência";"mestrado";"2017";331;0,00263684088935624
+"Centro de convivência";"doutorado";"2017";89;0,000708999514056513
+"Centro DIA";"sem escolaridade";"2017";114;0,0023523585489662
+"Centro DIA";"fundamental incompleto";"2017";1243;0,0256489620733771
+"Centro DIA";"fundamental completo";"2017";1436;0,0296314638273286
+"Centro DIA";"medio incompleto";"2017";639;0,013185588708679
+"Centro DIA";"medio completo";"2017";5423;0,111902108868804
+"Centro DIA";"superior incompleto";"2017";1321;0,0272584705542487
+"Centro DIA";"superior completo";"2017";11992;0,247451611571953
+"Centro DIA";"especializacao";"2017";3595;0,0741818331888903
+"Centro DIA";"mestrado";"2017";168;0,00346663365110808
+"Centro DIA";"doutorado";"2017";47;0,000969832033345714
