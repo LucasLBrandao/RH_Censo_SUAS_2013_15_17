@@ -2,6 +2,9 @@ library(tidyverse)
 
 SUAS_13_17 <- readRDS("./output/SUAS-2013-2017.rds")
 
+SUAS_13_17 <- SUAS_13_17 %>% filter(gov == "governamental",
+                                    !str_detect(alocação,"Conselho"))
+
 # Tema dos gráficos -----
 GRAY1 <- "#231F20"
 GRAY2 <- "#414040"
@@ -50,14 +53,67 @@ theme_minimal(base_size = 11) +
       strip.text = element_text(color = GRAY7)) 
 }
 
+save_plot <- function(plot,title,Width = 12,Height = 8,Pointsize = 12, Res = 300, Units = "in"){
+  
+  png(filename = paste0("./graphics/", title),
+      type = "cairo",
+      units = Units, 
+      width = Width, 
+      height = Height, 
+      pointsize = Pointsize, 
+      res = Res)
+  print(plot)
+  dev.off()
+}
+
 
 
 # Quantidade de trabalhadores -------
+#       por esfera ----
+
+p1 <- SUAS_13_17 %>%
+        #mutate(ano = as.character(ano)) %>% 
+        group_by(esfera,ano) %>% 
+        summarise(n = n()) %>% 
+        drop_na() %>% 
+        ggplot(aes(x = ano, y = n, color = reorder(esfera,-n )))+
+         geom_line(size = 1)+
+         geom_point()+
+         geom_text(aes(label = n),
+                   vjust = -1)+
+         theme_swd()+
+         labs(y = "Quantidade de trabalhadores da Assistência Social",
+              color = "",
+              title = "Número de trabalhadores do SUAS por esfera")+
+        scale_y_log10(labels = scales::comma)
+
+save_plot(p1,title = "qt de trabalhadores por esfera.png")
+
+#       por proteção ----
+
+p1 <- SUAS_13_17 %>%
+        #mutate(ano = as.character(ano)) %>% 
+        group_by(proteção,ano) %>% 
+        summarise(n = n()) %>% 
+        drop_na() %>% 
+        ggplot(aes(x = ano, y = n, color = reorder(proteção,-n )))+
+         geom_line(size = 1)+
+         geom_point()+
+         geom_text(aes(label = n),
+                   vjust = -1)+
+         theme_swd()+
+         labs(y = "Quantidade de trabalhadores da Assistência Social",
+              color = "",
+              title = "Número de trabalhadores do SUAS por proteção")+
+        scale_y_continuous(labels = scales::comma)
+
+save_plot(p1,title = "qt de trabalhadores por proteção.png")
+
+
 #       Por estado -----
 
 p1 <- SUAS_13_17 %>%
-        mutate(ano = as.character(ano)) %>% 
-        filter(!str_detect(alocação,"Conselho")) %>% 
+        mutate(ano = as.character(ano)) %>%
         group_by(UF,ano) %>% 
         summarise(n = n()) %>% 
         ggplot(aes(y = reorder(UF,n), x = n/1000, color = ano))+
@@ -71,7 +127,8 @@ p1 <- SUAS_13_17 %>%
               legend.justification="left")+
         labs(y = "Estado",
              x = "Quantidade de trabalhadores da Assistência Social (em mil)",
-             color = "")+
+             color = "",
+              title = "Número de trabalhadores do SUAS por estadi")+
         scale_y_discrete(expand = c(0.04,0.04))+
         scale_color_manual(values = c("#6EAAE6","#2477C9","#0D2C4A"))
 
@@ -100,7 +157,6 @@ SUAS_13_17 %>%
 p2 <- SUAS_13_17 %>% 
         mutate(ano = as.character(ano),
                municipiouf = paste0(Município,", ",UF)) %>% 
-        filter(!str_detect(alocação,"Conselho")) %>% 
         group_by(municipiouf,ano) %>% 
         summarise(n = n()) %>%
         pivot_wider(names_from = "ano",values_from = "n") %>% 
@@ -120,7 +176,8 @@ p2 <- SUAS_13_17 %>%
               legend.justification="left")+
         labs(y = "Município, UF",
              x = "Quantidade de trabalhadores da Assistência Social (em mil)",
-             color = "")+
+             color = "",
+              title = "Número de trabalhadores do SUAS por município")+
         scale_y_discrete(expand = c(0.04,0.04))+
         scale_color_manual(values = c("#6EAAE6","#2477C9","#0D2C4A"))
 
@@ -148,7 +205,6 @@ dev.off()
 #       Por alocação ------
 p3 <- SUAS_13_17 %>%
         #mutate(ano = as.character(ano)) %>% 
-        filter(!str_detect(alocação,"Conselho")) %>% 
         group_by(alocação,ano) %>% 
         summarise(n = n()) %>% 
         ggplot(aes(x = ano, y = n, color = reorder(alocação,-n )))+
@@ -158,7 +214,8 @@ p3 <- SUAS_13_17 %>%
                    vjust = -1)+
          theme_swd()+
          labs(y = "Quantidade de trabalhadores da Assistência Social",
-              color = "")
+              color = "",
+              title = "Número de trabalhadores do SUAS por alocação")
  
  png(filename="./graphics/qt de trabalhadores por alocação.png",
     type="cairo",
@@ -188,7 +245,6 @@ perfil_csv <- function(eixo_x,eixo_fill, Ano = c(2013,2015,2017)){
   SUAS_13_17 %>%
     filter(ano %in% Ano) %>% 
     mutate(ano = as.character(ano)) %>% 
-    filter(!str_detect(!!eixo_x,"Conselho")) %>% 
     drop_na(!!eixo_fill) %>%
     drop_na(!!eixo_x) %>% 
     group_by(!!eixo_x,!!eixo_fill,ano) %>% 
@@ -211,7 +267,6 @@ perfil <- function(eixo_x, eixo_fill , Ano = 2017, ranking = 5){
   SUAS_13_17_perc <- SUAS_13_17 %>%
     filter(ano %in% Ano) %>% 
     mutate(ano = as.character(ano)) %>% 
-    filter(!str_detect(!!eixo_x,"Conselho")) %>% 
     drop_na(!!eixo_fill) %>%
     drop_na(!!eixo_x) %>% 
     group_by(!!eixo_x,!!eixo_fill) %>% 
@@ -254,20 +309,25 @@ perfil <- function(eixo_x, eixo_fill , Ano = 2017, ranking = 5){
   
 }
 
-save_plot <- function(plot,title,Width = 12,Height = 8,Pointsize = 12, Res = 300, Units = "in"){
-  
-  png(filename = paste0("./graphics/", title),
-      type = "cairo",
-      units = Units, 
-      width = Width, 
-      height = Height, 
-      pointsize = Pointsize, 
-      res = Res)
-  print(plot)
-  dev.off()
-}
-
 # Perfil de escolaridade -----
+#       por esfera ----
+p0 <- perfil(esfera,Escolaridade,ranking = 4) +
+        coord_flip()+
+  scale_fill_manual(values = rev(c("#001d6c","#3c3d8a","#6560a8","#8d85c8","#b5ace8","#C2C2C2")))+
+  ggtitle("Perfil de Escolaridade por esfera em 2017")+guides(fill = guide_legend(reverse=T))
+
+save_plot(p0,Height = 6,"Perfil de escolaridade por esfera em 2017.png")
+
+#       por proteção ----
+
+
+p1 <- perfil(proteção,Escolaridade,ranking = 4) +
+        coord_flip()+
+  scale_fill_manual(values = rev(c("#001d6c","#3c3d8a","#6560a8","#8d85c8","#b5ace8","#C2C2C2")))+
+  ggtitle("Perfil de Escolaridade por proteção em 2017")+guides(fill = guide_legend(reverse=T))
+
+save_plot(p1,Height = 6,"Perfil de escolaridade por proteção em 2017.png")
+
 #       por alocação ----
 
 p4 <- perfil(alocação,Escolaridade,ranking = 4) +
@@ -281,11 +341,39 @@ perfil_csv(alocação,Escolaridade) %>% write.csv2("./output/Perfil escolaridade
 #       por ano ----
 
 p5 <- perfil(ano,Escolaridade,Ano = c(2013,2015,2017),ranking = 6)+
-  scale_fill_manual(values = rev(c("#001d6c","#3c3d8a","#6560a8","#8d85c8","#958dce","#b5ace8","#C2C2C2")))
+  scale_fill_manual(values = rev(c("#001d6c","#3c3d8a","#6560a8","#8d85c8","#958dce","#b5ace8","#C2C2C2")))+
+  ggtitle("Perfil de Escolaridade por ano")
 
 save_plot(p5,Height = 8,Width = 8,title = "Perfil de escolaridade por ano.png")
 
 # Perfil de formação ----
+#       por esfera ----
+
+perfil_csv(esfera,Profissão) %>% write.csv2("./output/Perfil formação por alocação.csv",row.names = F)
+
+
+p6 <- perfil(esfera,Profissão,ranking = 3)+
+  coord_flip()+
+  guides(fill = guide_legend(reverse=T))+
+  scale_fill_manual(values = rev(c("#3588d1", "#214d4e", "#da887c", "#29b28a", "#9e194d", "#729890","#C2C2C2")))+
+  ggtitle("Perfil de formação por esfera em 2017")
+
+
+save_plot(p6,title = "Perfil de formação por esfera em 2017.png")
+
+#       por proteção ----
+
+perfil_csv(proteção,Profissão) %>% write.csv2("./output/Perfil formação por alocação.csv",row.names = F)
+
+
+p6 <- perfil(proteção,Profissão,ranking = 3)+
+  coord_flip()+
+  guides(fill = guide_legend(reverse=T))+
+  scale_fill_manual(values = rev(c("#3588d1", "#214d4e", "#da887c", "#29b28a", "#9e194d", "#729890","#C2C2C2")))+
+  ggtitle("Perfil de formação por protençao em 2017")
+
+
+save_plot(p6,title = "Perfil de formação por proteção em 2017.png")
 
 #       por alocação ----
 
@@ -295,7 +383,8 @@ perfil_csv(alocação,Profissão) %>% write.csv2("./output/Perfil formação por
 p6 <- perfil(alocação,Profissão,ranking = 3)+
   coord_flip()+
   guides(fill = guide_legend(reverse=T))+
-  scale_fill_manual(values = rev(c("#3588d1", "#214d4e", "#da887c", "#29b28a", "#9e194d", "#729890","#C2C2C2")))
+  scale_fill_manual(values = rev(c("#3588d1", "#214d4e", "#da887c", "#29b28a", "#9e194d", "#729890","#C2C2C2")))+
+  ggtitle("Perfil de formação por alocação em 2017")
 
 
 save_plot(p6,title = "Perfil de formação por alocação em 2017.png")
@@ -304,12 +393,40 @@ save_plot(p6,title = "Perfil de formação por alocação em 2017.png")
 p7 <- perfil(ano,Profissão,ranking = 5, Ano = c(2013,2015,2017))+
   #coord_flip()+
   guides(fill = guide_legend(reverse=T))+
-  scale_fill_manual(values = rev(c("#3588d1", "#214d4e", "#da887c", "#29b28a", "#9e194d", "#729890","#C2C2C2")))
+  scale_fill_manual(values = rev(c("#3588d1", "#214d4e", "#da887c", "#29b28a", "#9e194d", "#729890","#C2C2C2")))+
+  ggtitle("Perfil de formação por ano")
 
 save_plot(p7,Height = 8,Width = 7,title = "Perfil de formação por ano.png")
 
 
 # Perfil de vínculo ------
+#       por esfera ----
+
+perfil_csv(esfera,Vínculo) %>% write.csv2("./output/Perfil Vínculo por alocação.csv",row.names = F)
+
+
+p6 <- perfil(esfera,Vínculo,ranking = 3)+
+  coord_flip()+
+  guides(fill = guide_legend(reverse=T))+
+  scale_fill_manual(values = rev(c("#001d6c","#303481","#4f4c96","#6b65ac","#8880c2","#a49cd9","#C2C2C2")))+
+  ggtitle("Perfil de Vínculo por esfera em 2017")
+
+
+save_plot(p6,title = "Perfil de Vínculo por esfera em 2017.png")
+
+#       por proteção ----
+
+perfil_csv(proteção,Vínculo) %>% write.csv2("./output/Perfil Vínculo por alocação.csv",row.names = F)
+
+
+p6 <- perfil(proteção,Vínculo,ranking = 3)+
+  coord_flip()+
+  guides(fill = guide_legend(reverse=T))+
+  scale_fill_manual(values = rev(c("#001d6c","#303481","#4f4c96","#6b65ac","#8880c2","#a49cd9","#C2C2C2")))+
+  ggtitle("Perfil de Vínculo por proteção em 2017.png")
+
+
+save_plot(p6,title = "Perfil de Vínculo por proteção em 2017.png")
 #      por alocação ------
 
 perfil_csv(alocação,Vínculo) %>% write.csv2("./output/Perfil Vínculo por alocação.csv",row.names = F)

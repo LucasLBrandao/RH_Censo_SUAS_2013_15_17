@@ -3,8 +3,13 @@ library(tidyverse)
 source("./R/1. load2013.R",encoding = "UTF-8")
 
 # Selecionando colunas -------
+
+acolhimento_2013_dadosgerais <- read_excel("./input/Censo SUAS 2013/Acolhimento/Censo_SUAS_2013_Acolhimento_Dados_Gerais_Divulgação.xlsx",
+                                           sheet = 1) %>% select(id_acolhimento,q4)
+
 acolhimento_2013 <- acolhimento_2013 %>% 
-        select(UF,
+        select(id_acolhimento,
+               UF,
                IBGE,
                IBGE7,
                Município,
@@ -12,8 +17,14 @@ acolhimento_2013 <- acolhimento_2013 %>%
                Escolaridade = q38_4,
                Profissão = q38_5,
                Vínculo = q38_6,
-               Função = q38_7) %>% 
-        mutate(alocação = "Centro de acolhimento")
+               Função = q38_7,
+               esfera = origem) %>% 
+        left_join(acolhimento_2013_dadosgerais) %>% 
+        rename(gov = q4) %>% 
+        mutate(alocação = "Centro de acolhimento",
+               proteção = "PSE de alta complexidade")
+
+
 POP_2013 <- POP_2013 %>% 
          select(UF=uf,
                 IBGE=municipio,
@@ -24,7 +35,10 @@ POP_2013 <- POP_2013 %>%
                Função = q46_9,
                Idade = D46_2,
                Faixa_idade = D46_2_categoria) %>% 
-        mutate(alocação = "Centro POP") %>% 
+        mutate(alocação = "Centro POP",
+               esfera = "Municipal",
+               proteção = "PSE de média complexidade",
+               gov = "Governamental") %>% 
         left_join(municipios, by = c("IBGE" = "id")) %>% 
         rename(Município = nome)
 
@@ -35,7 +49,9 @@ cons_estad_2013 <- cons_estad_2013 %>%
                Função = q67_6,
                Idade = D67_2,
                Faixa_idade = D67_2_categoria) %>% 
-        mutate(alocação = "Conselho estadual") %>% 
+        mutate(alocação = "Conselho estadual",
+               esfera = "Estadual",
+               gov = "Governamental") %>% 
         left_join(estados, by = c("sig.UF"="id")) %>% 
         rename(UF = sigla) %>% 
         select(-sig.UF)
@@ -47,7 +63,9 @@ cons_mun_2013 <- cons_mun_2013 %>%
                Função = q67_6,
                Idade = D67_2,
                Faixa_idade = D67_2_categoria) %>% 
-        mutate(alocação = "Conselho município")
+        mutate(alocação = "Conselho município",
+               esfera = "Municipal",
+               gov = "Governamental")
 
 
 CRAS_2013 <- CRAS_2013 %>% 
@@ -58,7 +76,10 @@ CRAS_2013 <- CRAS_2013 %>%
                Função = q63_9,
                Idade = D63_2,
                Faixa_idade = D63_2_categoria) %>% 
-        mutate(alocação = "CRAS")
+        mutate(alocação = "CRAS",
+               esfera = "Municipal",
+               proteção = "PS básica",
+               gov = "Governamental")
 
 
 CREAS_2013 <- CREAS_2013 %>% 
@@ -72,8 +93,11 @@ CREAS_2013 <- CREAS_2013 %>%
                Vínculo = q58_10,
                Função = q58_11,
                Idade = D58_2,
-               Faixa_idade = D58_2_categoria) %>% 
-        mutate(alocação = "CREAS")
+               Faixa_idade = D58_2_categoria,
+               esfera = tipo_creas) %>% 
+        mutate(alocação = "CREAS",
+               proteção = "PSE de média complexidade",
+               gov = "Governamental")
 
 
 # Unindo os dados --------

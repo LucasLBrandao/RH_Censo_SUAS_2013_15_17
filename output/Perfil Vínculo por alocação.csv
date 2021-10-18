@@ -1,12 +1,12 @@
 "alocação";"Vínculo";"ano";"n";"perc"
-"Centro de acolhimento";"sem vinculo";"2013";473;0,00202375451387106
-"Centro de acolhimento";"outro vinculo nao permanente";"2013";5659;0,0242123188033749
-"Centro de acolhimento";"voluntario";"2013";1347;0,00576320788622478
-"Centro de acolhimento";"terceirizado";"2013";12154;0,0520015060498708
-"Centro de acolhimento";"empregado (clt)";"2013";25429;0,108799267512108
-"Centro de acolhimento";"servidor publico temporario";"2013";4001;0,017118481627903
-"Centro de acolhimento";"comissionado";"2013";1842;0,00788109051702007
-"Centro de acolhimento";"servidor publico estatutario";"2013";8181;0,0350028238435077
+"Centro de acolhimento";"sem vinculo";"2013";114;0,00152569593147752
+"Centro de acolhimento";"outro vinculo nao permanente";"2013";1651;0,0220958244111349
+"Centro de acolhimento";"voluntario";"2013";24;0,000321199143468951
+"Centro de acolhimento";"terceirizado";"2013";2621;0,0350776231263383
+"Centro de acolhimento";"empregado (clt)";"2013";2659;0,0355861884368308
+"Centro de acolhimento";"servidor publico temporario";"2013";3340;0,0447002141327623
+"Centro de acolhimento";"comissionado";"2013";1662;0,0222430406852248
+"Centro de acolhimento";"servidor publico estatutario";"2013";7661;0,102529443254818
 "Centro POP";"sem vinculo";"2013";11;0,00137913741223671
 "Centro POP";"outro vinculo nao permanente";"2013";178;0,0223169508525577
 "Centro POP";"voluntario";"2013";4;0,000501504513540622
@@ -31,14 +31,14 @@
 "CREAS";"servidor publico temporario";"2013";5818;0,0882973395456132
 "CREAS";"comissionado";"2013";1797;0,0272723133660136
 "CREAS";"servidor publico estatutario";"2013";7410;0,112458454113612
-"Centro de acolhimento";"outro vinculo nao permanente";"2015";7987;0,0341727849942667
-"Centro de acolhimento";"voluntario";"2015";2102;0,00899351371703377
-"Centro de acolhimento";"terceirizado";"2015";16213;0,0693681436223922
-"Centro de acolhimento";"empregado (clt)";"2015";17053;0,0729621262685903
-"Centro de acolhimento";"empregado publico (clt)";"2015";20232;0,0865636391641423
-"Centro de acolhimento";"servidor publico temporario";"2015";8328;0,0356317708065924
-"Centro de acolhimento";"comissionado";"2015";10;4,27855076928343e-05
-"Centro de acolhimento";"servidor publico estatutario";"2015";11046;0,0472608717975048
+"Centro de acolhimento";"outro vinculo nao permanente";"2015";3206;0,042906852248394
+"Centro de acolhimento";"voluntario";"2015";27;0,00036134903640257
+"Centro de acolhimento";"terceirizado";"2015";3923;0,0525026766595289
+"Centro de acolhimento";"empregado (clt)";"2015";756;0,0101177730192719
+"Centro de acolhimento";"empregado publico (clt)";"2015";1459;0,0195262312633833
+"Centro de acolhimento";"servidor publico temporario";"2015";6835;0,0914748394004283
+"Centro de acolhimento";"comissionado";"2015";10;0,000133832976445396
+"Centro de acolhimento";"servidor publico estatutario";"2015";10280;0,137580299785867
 "Centro POP";"outro vinculo nao permanente";"2015";305;0,0382397191574724
 "Centro POP";"voluntario";"2015";5;0,000626880641925777
 "Centro POP";"terceirizado";"2015";568;0,0712136409227683
@@ -60,30 +60,30 @@
 "CREAS";"servidor publico temporario";"2015";6042;0,0916968933541758
 "CREAS";"comissionado";"2015";1973;0,0299433913584556
 "CREAS";"servidor publico estatutario";"2015";8401;0,127498444400601
-"Centro de convivência";"outro vinculo nao permanente";"2015";7391;0,0588792938627239
-"Centro de convivência";"voluntario";"2015";4258;0,0339207188834364
-"Centro de convivência";"terceirizado";"2015";2941;0,0234290357529794
-"Centro de convivência";"empregado (clt)";"2015";25856;0,205977949142821
-"Centro de convivência";"empregado publico (clt)";"2015";3114;0,0248072143266841
-"Centro de convivência";"servidor publico temporario";"2015";7586;0,060432732139443
-"Centro de convivência";"comissionado";"2015";2136;0,0170161238926773
-"Centro de convivência";"servidor publico estatutario";"2015";6942;0,0553024026512013
-"Centro DIA";"outro vinculo nao permanente";"2015";2143;0,0442202137757418
-"Centro DIA";"voluntario";"2015";388;0,00800627295613058
-"Centro DIA";"terceirizado";"2015";980;0,0202220296314638
-"Centro DIA";"empregado (clt)";"2015";12844;0,265032396516859
-"Centro DIA";"empregado publico (clt)";"2015";1425;0,0294044818620775
-"Centro DIA";"servidor publico temporario";"2015";1432;0,0295489249308737
-"Centro DIA";"comissionado";"2015";179;0,00369361561635921
-"Centro DIA";"servidor publico estatutario";"2015";3093;0,0638232016837935
-"Centro de acolhimento";"sem vinculo";"2017";934;0,00399616641851072
-"Centro de acolhimento";"outro vinculo nao permanente";"2017";7469;0,0319564956957779
-"Centro de acolhimento";"voluntario";"2017";2202;0,00942136879396211
-"Centro de acolhimento";"terceirizado";"2017";13348;0,0571100956683952
-"Centro de acolhimento";"empregado (clt)";"2017";34240;0,146497578340265
-"Centro de acolhimento";"empregado publico (clt)";"2017";11854;0,0507179408190858
-"Centro de acolhimento";"servidor publico temporario";"2017";9322;0,0398846502712601
-"Centro de acolhimento";"servidor publico estatutario";"2017";12298;0,0526176173606476
+"Centro de convivência";"outro vinculo nao permanente";"2015";2708;0,0662264612374664
+"Centro de convivência";"voluntario";"2015";102;0,002494497432135
+"Centro de convivência";"terceirizado";"2015";1135;0,0277573978967963
+"Centro de convivência";"empregado (clt)";"2015";153;0,00374174614820249
+"Centro de convivência";"empregado publico (clt)";"2015";906;0,0221570066030814
+"Centro de convivência";"servidor publico temporario";"2015";6509;0,159183174370262
+"Centro de convivência";"comissionado";"2015";1947;0,0476155539251651
+"Centro de convivência";"servidor publico estatutario";"2015";6130;0,149914404499878
+"Centro DIA";"outro vinculo nao permanente";"2015";111;0,0474358974358974
+"Centro DIA";"voluntario";"2015";7;0,00299145299145299
+"Centro DIA";"terceirizado";"2015";101;0,0431623931623932
+"Centro DIA";"empregado (clt)";"2015";104;0,0444444444444444
+"Centro DIA";"empregado publico (clt)";"2015";151;0,0645299145299145
+"Centro DIA";"servidor publico temporario";"2015";109;0,0465811965811966
+"Centro DIA";"comissionado";"2015";46;0,0196581196581197
+"Centro DIA";"servidor publico estatutario";"2015";442;0,188888888888889
+"Centro de acolhimento";"sem vinculo";"2017";296;0,00396145610278373
+"Centro de acolhimento";"outro vinculo nao permanente";"2017";3468;0,0464132762312634
+"Centro de acolhimento";"voluntario";"2017";31;0,000414882226980728
+"Centro de acolhimento";"terceirizado";"2017";3747;0,0501472162740899
+"Centro de acolhimento";"empregado (clt)";"2017";1015;0,0135840471092077
+"Centro de acolhimento";"empregado publico (clt)";"2017";531;0,00710653104925054
+"Centro de acolhimento";"servidor publico temporario";"2017";7857;0,105152569593148
+"Centro de acolhimento";"servidor publico estatutario";"2017";11547;0,154536937901499
 "Centro POP";"sem vinculo";"2017";27;0,0033851554663992
 "Centro POP";"outro vinculo nao permanente";"2017";281;0,0352306920762287
 "Centro POP";"voluntario";"2017";2;0,000250752256770311
@@ -108,19 +108,19 @@
 "CREAS";"servidor publico temporario";"2017";5847;0,0887374603511861
 "CREAS";"comissionado";"2017";2067;0,0313699898316917
 "CREAS";"servidor publico estatutario";"2017";9792;0,148609066488595
-"Centro de convivência";"outro vinculo nao permanente";"2017";7929;0,0631651902364413
-"Centro de convivência";"voluntario";"2017";4961;0,0395210630297623
-"Centro de convivência";"terceirizado";"2017";2807;0,0223615448346186
-"Centro de convivência";"empregado (clt)";"2017";27473;0,218859537314384
-"Centro de convivência";"empregado publico (clt)";"2017";3892;0,0310050347332866
-"Centro de convivência";"servidor publico temporario";"2017";7819;0,0622888917213689
-"Centro de convivência";"comissionado";"2017";2625;0,0209116691096807
-"Centro de convivência";"servidor publico estatutario";"2017";7798;0,0621215983684915
-"Centro DIA";"outro vinculo nao permanente";"2017";2595;0,0535471090751517
-"Centro DIA";"voluntario";"2017";643;0,0132681276051339
-"Centro DIA";"terceirizado";"2017";1018;0,0210061491477859
-"Centro DIA";"empregado (clt)";"2017";14318;0,295447979860509
-"Centro DIA";"empregado publico (clt)";"2017";2379;0,0490900086665841
-"Centro DIA";"servidor publico temporario";"2017";1744;0,0359869588543601
-"Centro DIA";"comissionado";"2017";187;0,00385869340926912
-"Centro DIA";"servidor publico estatutario";"2017";3094;0,0638438364079072
+"Centro de convivência";"outro vinculo nao permanente";"2017";2727;0,0666911225238445
+"Centro de convivência";"voluntario";"2017";107;0,00261677671802397
+"Centro de convivência";"terceirizado";"2017";1115;0,0272682807532404
+"Centro de convivência";"empregado (clt)";"2017";171;0,00418195157740279
+"Centro de convivência";"empregado publico (clt)";"2017";1162;0,0284177060405967
+"Centro de convivência";"servidor publico temporario";"2017";6724;0,164441183663487
+"Centro de convivência";"comissionado";"2017";2462;0,060210320371729
+"Centro de convivência";"servidor publico estatutario";"2017";6832;0,167082416238689
+"Centro DIA";"outro vinculo nao permanente";"2017";132;0,0564102564102564
+"Centro DIA";"voluntario";"2017";6;0,00256410256410256
+"Centro DIA";"terceirizado";"2017";70;0,0299145299145299
+"Centro DIA";"empregado (clt)";"2017";106;0,0452991452991453
+"Centro DIA";"empregado publico (clt)";"2017";182;0,0777777777777778
+"Centro DIA";"servidor publico temporario";"2017";163;0,0696581196581197
+"Centro DIA";"comissionado";"2017";62;0,0264957264957265
+"Centro DIA";"servidor publico estatutario";"2017";548;0,234188034188034

@@ -1,17 +1,17 @@
 "alocação";"Profissão";"ano";"n";"perc"
-"Centro de acolhimento";"administrador";"2013";405;0,00172644573844986
-"Centro de acolhimento";"advogado";"2013";221;0,000942085205425729
-"Centro de acolhimento";"assistente social";"2013";3774;0,0160879165849624
-"Centro de acolhimento";"enfermeiro";"2013";1024;0,00436513687943867
-"Centro de acolhimento";"fisioterapeuta";"2013";560;0,00238718423094302
-"Centro de acolhimento";"medico";"2013";247;0,00105291875900523
-"Centro de acolhimento";"nutricionista";"2013";450;0,00191827304272207
-"Centro de acolhimento";"outro profissional de nivel superior";"2013";2771;0,0118122991141841
-"Centro de acolhimento";"pedagogo";"2013";1497;0,00638145498878876
-"Centro de acolhimento";"psicologo";"2013";2445;0,0104226168654566
-"Centro de acolhimento";"sem formacao profissional";"2013";45444;0,193720000341026
-"Centro de acolhimento";"sociologo";"2013";60;0,00025576973902961
-"Centro de acolhimento";"terapeuta ocupacional";"2013";188;0,000801411848959443
+"Centro de acolhimento";"administrador";"2013";85;0,00113401374157828
+"Centro de acolhimento";"advogado";"2013";93;0,001240744446668
+"Centro de acolhimento";"assistente social";"2013";1477;0,0197051564271896
+"Centro de acolhimento";"enfermeiro";"2013";173;0,00230805149756521
+"Centro de acolhimento";"fisioterapeuta";"2013";57;0,000760456273764259
+"Centro de acolhimento";"medico";"2013";24;0,000320192115269161
+"Centro de acolhimento";"nutricionista";"2013";78;0,00104062437462477
+"Centro de acolhimento";"outro profissional de nivel superior";"2013";1059;0,0141284770862518
+"Centro de acolhimento";"pedagogo";"2013";718;0,00957908078180241
+"Centro de acolhimento";"psicologo";"2013";914;0,0121939830565006
+"Centro de acolhimento";"sem formacao profissional";"2013";14987;0,199946634647455
+"Centro de acolhimento";"sociologo";"2013";21;0,000280168100860516
+"Centro de acolhimento";"terapeuta ocupacional";"2013";46;0,000613701554265893
 "Centro POP";"administrador";"2013";11;0,00137328339575531
 "Centro POP";"advogado";"2013";28;0,0034956304619226
 "Centro POP";"antropologo";"2013";1;0,000124843945068664
@@ -66,25 +66,25 @@
 "CREAS";"sem formacao profissional";"2013";5034;0,0762069122121804
 "CREAS";"sociologo";"2013";53;0,000802337375297092
 "CREAS";"terapeuta ocupacional";"2013";43;0,000650952964863678
-"Centro de acolhimento";"administrador";"2015";815;0,00347420562181886
-"Centro de acolhimento";"advogado";"2015";343;0,0014621503414526
-"Centro de acolhimento";"analista de sistema";"2015";24;0,000102307895611844
-"Centro de acolhimento";"antropologo";"2015";20;8,52565796765365e-05
-"Centro de acolhimento";"assistente social";"2015";5610;0,0239144705992685
-"Centro de acolhimento";"cientista politico";"2015";12;5,11539478059219e-05
-"Centro de acolhimento";"economista";"2015";41;0,0001747759883369
-"Centro de acolhimento";"enfermeiro";"2015";1944;0,00828693954455935
-"Centro de acolhimento";"fisioterapeuta";"2015";781;0,00332926943636875
-"Centro de acolhimento";"medico";"2015";295;0,00125753455022891
-"Centro de acolhimento";"nutricionista";"2015";736;0,00313744213209654
-"Centro de acolhimento";"outro profissional de nivel superior";"2015";4077;0,017379553767062
-"Centro de acolhimento";"pedagogo";"2015";2078;0,00885815862839215
-"Centro de acolhimento";"profissional de nivel medio";"2015";25366;0,108130920003751
-"Centro de acolhimento";"programador";"2015";12;5,11539478059219e-05
-"Centro de acolhimento";"psicologo";"2015";3753;0,0159983971763021
-"Centro de acolhimento";"sem formacao profissional";"2015";37538;0,160018074394891
-"Centro de acolhimento";"sociologo";"2015";84;0,000358077634641453
-"Centro de acolhimento";"terapeuta ocupacional";"2015";295;0,00125753455022891
+"Centro de acolhimento";"administrador";"2015";159;0,00212127276365819
+"Centro de acolhimento";"advogado";"2015";144;0,00192115269161497
+"Centro de acolhimento";"analista de sistema";"2015";7;9,33893669535054e-05
+"Centro de acolhimento";"antropologo";"2015";6;8,00480288172904e-05
+"Centro de acolhimento";"assistente social";"2015";2304;0,0307384430658395
+"Centro de acolhimento";"cientista politico";"2015";2;2,66826762724301e-05
+"Centro de acolhimento";"economista";"2015";14;0,000186778733907011
+"Centro de acolhimento";"enfermeiro";"2015";294;0,00392235341204723
+"Centro de acolhimento";"fisioterapeuta";"2015";82;0,00109398972716964
+"Centro de acolhimento";"medico";"2015";29;0,000386898805950237
+"Centro de acolhimento";"nutricionista";"2015";109;0,00145420585684744
+"Centro de acolhimento";"outro profissional de nivel superior";"2015";1524;0,0203321993195918
+"Centro de acolhimento";"pedagogo";"2015";1044;0,0139283570142085
+"Centro de acolhimento";"profissional de nivel medio";"2015";8422;0,112360749783203
+"Centro de acolhimento";"programador";"2015";8;0,00010673070508972
+"Centro de acolhimento";"psicologo";"2015";1519;0,0202654926289107
+"Centro de acolhimento";"sem formacao profissional";"2015";10967;0,146314455339871
+"Centro de acolhimento";"sociologo";"2015";35;0,000466946834767527
+"Centro de acolhimento";"terapeuta ocupacional";"2015";62;0,000827162964445334
 "Centro POP";"administrador";"2015";33;0,00411985018726592
 "Centro POP";"advogado";"2015";46;0,00574282147315855
 "Centro POP";"assistente social";"2015";607;0,0757802746566792
@@ -138,63 +138,58 @@
 "CREAS";"sem formacao profissional";"2015";4076;0,0617042856926594
 "CREAS";"sociologo";"2015";50;0,000756922052167068
 "CREAS";"terapeuta ocupacional";"2015";44;0,00066609140590702
-"Centro de convivência";"administrador";"2015";895;0,00712982657393909
-"Centro de convivência";"advogado";"2015";232;0,00184817850855181
-"Centro de convivência";"analista de sistema";"2015";107;0,000852392674202774
-"Centro de convivência";"antropologo";"2015";34;0,000270853746942938
-"Centro de convivência";"assistente social";"2015";4235;0,0337372240677453
-"Centro de convivência";"cientista politico";"2015";10;7,96628667479228e-05
-"Centro de convivência";"economista";"2015";55;0,000438145767113575
-"Centro de convivência";"enfermeiro";"2015";195;0,00155342590158449
-"Centro de convivência";"fisioterapeuta";"2015";381;0,00303515522309586
-"Centro de convivência";"medico";"2015";80;0,000637302933983382
-"Centro de convivência";"nutricionista";"2015";174;0,00138613388141386
-"Centro de convivência";"outro profissional de nivel superior";"2015";9528;0,0759027794374208
-"Centro de convivência";"pedagogo";"2015";6451;0,051390515339085
-"Centro de convivência";"profissional de nivel medio";"2015";17510;0,139489679675613
-"Centro de convivência";"programador";"2015";42;0,000334584040341276
-"Centro de convivência";"psicologo";"2015";2592;0,0206486150610616
-"Centro de convivência";"sem formacao profissional";"2015";17388;0,138517792701288
-"Centro de convivência";"sociologo";"2015";101;0,00080459495415402
-"Centro de convivência";"terapeuta ocupacional";"2015";214;0,00170478534840555
-"Centro DIA";"administrador";"2015";198;0,00408567537452024
-"Centro DIA";"advogado";"2015";53;0,00109364037802815
-"Centro DIA";"analista de sistema";"2015";21;0,000433329206388511
-"Centro DIA";"antropologo";"2015";9;0,000185712517023647
-"Centro DIA";"assistente social";"2015";1343;0,0277124344847509
-"Centro DIA";"cientista politico";"2015";4;8,25388964549544e-05
-"Centro DIA";"economista";"2015";10;0,000206347241137386
-"Centro DIA";"enfermeiro";"2015";138;0,00284759192769593
-"Centro DIA";"fisioterapeuta";"2015";1088;0,0224505798357476
-"Centro DIA";"medico";"2015";239;0,00493169906318353
-"Centro DIA";"nutricionista";"2015";133;0,00274441830712723
-"Centro DIA";"outro profissional de nivel superior";"2015";4499;0,09283562378771
-"Centro DIA";"pedagogo";"2015";3823;0,0788865502868227
-"Centro DIA";"profissional de nivel medio";"2015";3524;0,0727167677768148
-"Centro DIA";"programador";"2015";5;0,000103173620568693
-"Centro DIA";"psicologo";"2015";1477;0,0304774875159919
-"Centro DIA";"sem formacao profissional";"2015";5247;0,108270397424786
-"Centro DIA";"sociologo";"2015";19;0,000392059758161033
-"Centro DIA";"terapeuta ocupacional";"2015";654;0,013495109570385
-"Centro de acolhimento";"administrador";"2017";735;0,00313317930311272
-"Centro de acolhimento";"advogado";"2017";352;0,00150051580230704
-"Centro de acolhimento";"analista de sistema";"2017";57;0,000242981252078129
-"Centro de acolhimento";"antropologo";"2017";18;7,67309217088829e-05
-"Centro de acolhimento";"assistente social";"2017";5901;0,0251549538335621
-"Centro de acolhimento";"cientista politico";"2017";7;2,98398028867878e-05
-"Centro de acolhimento";"economista";"2017";76;0,000323975002770839
-"Centro de acolhimento";"enfermeiro";"2017";1712;0,00729796322031153
-"Centro de acolhimento";"fisioterapeuta";"2017";860;0,00366603292609107
-"Centro de acolhimento";"medico";"2017";320;0,00136410527482458
-"Centro de acolhimento";"nutricionista";"2017";833;0,00355093654352775
-"Centro de acolhimento";"outro profissional de nivel superior";"2017";4207;0,0179337215349595
-"Centro de acolhimento";"pedagogo";"2017";2110;0,0089945691558746
-"Centro de acolhimento";"profissional de nivel medio";"2017";29354;0,125131081991253
-"Centro de acolhimento";"programador";"2017";20;8,52565796765365e-05
-"Centro de acolhimento";"psicologo";"2017";3885;0,0165610906021672
-"Centro de acolhimento";"sem formacao profissional";"2017";40876;0,174247397542905
-"Centro de acolhimento";"sociologo";"2017";70;0,000298398028867878
-"Centro de acolhimento";"terapeuta ocupacional";"2017";283;0,00120638060242299
+"Centro de convivência";"administrador";"2015";118;0,0028857911469797
+"Centro de convivência";"advogado";"2015";36;0,000880410858400587
+"Centro de convivência";"analista de sistema";"2015";10;0,000244558571777941
+"Centro de convivência";"antropologo";"2015";5;0,00012227928588897
+"Centro de convivência";"assistente social";"2015";998;0,0244069454634385
+"Centro de convivência";"cientista politico";"2015";5;0,00012227928588897
+"Centro de convivência";"economista";"2015";8;0,000195646857422353
+"Centro de convivência";"enfermeiro";"2015";40;0,000978234287111763
+"Centro de convivência";"fisioterapeuta";"2015";90;0,00220102714600147
+"Centro de convivência";"medico";"2015";6;0,000146735143066764
+"Centro de convivência";"nutricionista";"2015";22;0,00053802885791147
+"Centro de convivência";"outro profissional de nivel superior";"2015";2700;0,066030814380044
+"Centro de convivência";"pedagogo";"2015";1700;0,0415749572022499
+"Centro de convivência";"profissional de nivel medio";"2015";6840;0,167278063096112
+"Centro de convivência";"programador";"2015";5;0,00012227928588897
+"Centro de convivência";"psicologo";"2015";551;0,0134751773049645
+"Centro de convivência";"sem formacao profissional";"2015";6389;0,156248471508926
+"Centro de convivência";"sociologo";"2015";24;0,000586940572267058
+"Centro de convivência";"terapeuta ocupacional";"2015";43;0,00105160185864515
+"Centro DIA";"administrador";"2015";3;0,00128205128205128
+"Centro DIA";"advogado";"2015";2;0,000854700854700855
+"Centro DIA";"assistente social";"2015";81;0,0346153846153846
+"Centro DIA";"economista";"2015";1;0,000427350427350427
+"Centro DIA";"enfermeiro";"2015";18;0,00769230769230769
+"Centro DIA";"fisioterapeuta";"2015";28;0,011965811965812
+"Centro DIA";"medico";"2015";2;0,000854700854700855
+"Centro DIA";"nutricionista";"2015";10;0,00427350427350427
+"Centro DIA";"outro profissional de nivel superior";"2015";151;0,0645299145299145
+"Centro DIA";"pedagogo";"2015";94;0,0401709401709402
+"Centro DIA";"profissional de nivel medio";"2015";267;0,114102564102564
+"Centro DIA";"psicologo";"2015";58;0,0247863247863248
+"Centro DIA";"sem formacao profissional";"2015";329;0,140598290598291
+"Centro DIA";"sociologo";"2015";3;0,00128205128205128
+"Centro DIA";"terapeuta ocupacional";"2015";24;0,0102564102564103
+"Centro de acolhimento";"administrador";"2017";155;0,00206790741111333
+"Centro de acolhimento";"advogado";"2017";132;0,00176105663398039
+"Centro de acolhimento";"analista de sistema";"2017";15;0,000200120072043226
+"Centro de acolhimento";"antropologo";"2017";3;4,00240144086452e-05
+"Centro de acolhimento";"assistente social";"2017";2413;0,0321926489226869
+"Centro de acolhimento";"economista";"2017";18;0,000240144086451871
+"Centro de acolhimento";"enfermeiro";"2017";243;0,00324194516710026
+"Centro de acolhimento";"fisioterapeuta";"2017";73;0,0009739176839437
+"Centro de acolhimento";"medico";"2017";20;0,000266826762724301
+"Centro de acolhimento";"nutricionista";"2017";110;0,00146754719498366
+"Centro de acolhimento";"outro profissional de nivel superior";"2017";1592;0,0212394103128544
+"Centro de acolhimento";"pedagogo";"2017";1089;0,0145287172303382
+"Centro de acolhimento";"profissional de nivel medio";"2017";9216;0,122953772263358
+"Centro de acolhimento";"programador";"2017";4;5,33653525448602e-05
+"Centro de acolhimento";"psicologo";"2017";1497;0,0199719831899139
+"Centro de acolhimento";"sem formacao profissional";"2017";11826;0,157774664798879
+"Centro de acolhimento";"sociologo";"2017";30;0,000400240144086452
+"Centro de acolhimento";"terapeuta ocupacional";"2017";56;0,000747114935628043
 "Centro POP";"administrador";"2017";35;0,00436953807740325
 "Centro POP";"advogado";"2017";57;0,00711610486891386
 "Centro POP";"analista de sistema";"2017";6;0,000749063670411985
@@ -251,43 +246,38 @@
 "CREAS";"sem formacao profissional";"2017";3900;0,0590399200690313
 "CREAS";"sociologo";"2017";43;0,000650952964863678
 "CREAS";"terapeuta ocupacional";"2017";49;0,000741783611123726
-"Centro de convivência";"administrador";"2017";886;0,00705812999386596
-"Centro de convivência";"advogado";"2017";275;0,00219072883556788
-"Centro de convivência";"analista de sistema";"2017";192;0,00152952704156012
-"Centro de convivência";"antropologo";"2017";33;0,000262887460268145
-"Centro de convivência";"assistente social";"2017";4741;0,0377681651251902
-"Centro de convivência";"cientista politico";"2017";8;6,37302933983382e-05
-"Centro de convivência";"economista";"2017";58;0,000462044627137952
-"Centro de convivência";"enfermeiro";"2017";140;0,00111528013447092
-"Centro de convivência";"fisioterapeuta";"2017";342;0,00272447004277896
-"Centro de convivência";"medico";"2017";90;0,000716965800731305
-"Centro de convivência";"nutricionista";"2017";207;0,001649021341682
-"Centro de convivência";"outro profissional de nivel superior";"2017";9487;0,0755761616837543
-"Centro de convivência";"pedagogo";"2017";6710;0,0534537835878562
-"Centro de convivência";"profissional de nivel medio";"2017";16850;0,13423193047025
-"Centro de convivência";"programador";"2017";43;0,000342550327016068
-"Centro de convivência";"psicologo";"2017";2617;0,0208477722279314
-"Centro de convivência";"sem formacao profissional";"2017";22325;0,177847350014738
-"Centro de convivência";"sociologo";"2017";95;0,000756797234105267
-"Centro de convivência";"terapeuta ocupacional";"2017";206;0,00164105505500721
-"Centro DIA";"administrador";"2017";232;0,00478725599438736
-"Centro DIA";"advogado";"2017";76;0,00156823903264413
-"Centro DIA";"analista de sistema";"2017";76;0,00156823903264413
-"Centro DIA";"antropologo";"2017";8;0,000165077792909909
-"Centro DIA";"assistente social";"2017";1663;0,0343155462011473
-"Centro DIA";"cientista politico";"2017";4;8,25388964549544e-05
-"Centro DIA";"economista";"2017";16;0,000330155585819818
-"Centro DIA";"economista domestico";"2017";3;6,19041723412158e-05
-"Centro DIA";"enfermeiro";"2017";197;0,0040650406504065
-"Centro DIA";"fisioterapeuta";"2017";1202;0,0248029383847138
-"Centro DIA";"medico";"2017";302;0,00623168668234906
-"Centro DIA";"musicoterapeuta";"2017";25;0,000515868102843465
-"Centro DIA";"nutricionista";"2017";161;0,00332219058231191
-"Centro DIA";"outro profissional de nivel superior";"2017";4877;0,100635549502703
-"Centro DIA";"pedagogo";"2017";4213;0,0869340926911807
-"Centro DIA";"profissional de nivel medio";"2017";4084;0,0842722132805084
-"Centro DIA";"programador";"2017";14;0,00028888613759234
-"Centro DIA";"psicologo";"2017";1688;0,0348314143039908
-"Centro DIA";"sem formacao profissional";"2017";6366;0,13136065370806
-"Centro DIA";"sociologo";"2017";16;0,000330155585819818
-"Centro DIA";"terapeuta ocupacional";"2017";755;0,0155792167058726
+"Centro de convivência";"administrador";"2017";113;0,00276351186109073
+"Centro de convivência";"advogado";"2017";48;0,00117388114453412
+"Centro de convivência";"analista de sistema";"2017";12;0,000293470286133529
+"Centro de convivência";"antropologo";"2017";1;2,44558571777941e-05
+"Centro de convivência";"assistente social";"2017";1189;0,0290780141843972
+"Centro de convivência";"economista";"2017";5;0,00012227928588897
+"Centro de convivência";"enfermeiro";"2017";40;0,000978234287111763
+"Centro de convivência";"fisioterapeuta";"2017";87;0,00212765957446809
+"Centro de convivência";"medico";"2017";8;0,000195646857422353
+"Centro de convivência";"nutricionista";"2017";39;0,000953778429933969
+"Centro de convivência";"outro profissional de nivel superior";"2017";2714;0,0663731963805331
+"Centro de convivência";"pedagogo";"2017";1791;0,0438004402054292
+"Centro de convivência";"profissional de nivel medio";"2017";6451;0,15776473465395
+"Centro de convivência";"programador";"2017";2;4,89117143555882e-05
+"Centro de convivência";"psicologo";"2017";544;0,01330398630472
+"Centro de convivência";"sem formacao profissional";"2017";8212;0,200831499144045
+"Centro de convivência";"sociologo";"2017";13;0,000317926143311323
+"Centro de convivência";"terapeuta ocupacional";"2017";31;0,000758131572511617
+"Centro DIA";"administrador";"2017";8;0,00341880341880342
+"Centro DIA";"advogado";"2017";6;0,00256410256410256
+"Centro DIA";"analista de sistema";"2017";1;0,000427350427350427
+"Centro DIA";"assistente social";"2017";126;0,0538461538461538
+"Centro DIA";"enfermeiro";"2017";24;0,0102564102564103
+"Centro DIA";"fisioterapeuta";"2017";25;0,0106837606837607
+"Centro DIA";"medico";"2017";5;0,00213675213675214
+"Centro DIA";"musicoterapeuta";"2017";1;0,000427350427350427
+"Centro DIA";"nutricionista";"2017";11;0,0047008547008547
+"Centro DIA";"outro profissional de nivel superior";"2017";180;0,0769230769230769
+"Centro DIA";"pedagogo";"2017";84;0,0358974358974359
+"Centro DIA";"profissional de nivel medio";"2017";323;0,138034188034188
+"Centro DIA";"programador";"2017";1;0,000427350427350427
+"Centro DIA";"psicologo";"2017";65;0,0277777777777778
+"Centro DIA";"sem formacao profissional";"2017";384;0,164102564102564
+"Centro DIA";"sociologo";"2017";4;0,00170940170940171
+"Centro DIA";"terapeuta ocupacional";"2017";21;0,00897435897435897

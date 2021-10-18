@@ -1,14 +1,14 @@
 "alocação";"Escolaridade";"ano";"n";"perc"
-"Centro de acolhimento";"sem escolaridade";"2013";392;0,00167109307391603
-"Centro de acolhimento";"fundamental incompleto";"2013";6713;0,028617468890812
-"Centro de acolhimento";"fundamental completo";"2013";7268;0,0309834297480145
-"Centro de acolhimento";"medio incompleto";"2013";3089;0,0131683839421597
-"Centro de acolhimento";"medio completo";"2013";24279;0,103501195769406
-"Centro de acolhimento";"superior incompleto";"2013";2969;0,0126568248378997
-"Centro de acolhimento";"superior completo";"2013";12518;0,0533641405593899
-"Centro de acolhimento";"especializacao";"2013";1700;0,00724708731035012
-"Centro de acolhimento";"mestrado";"2013";130;0,000554189029615009
-"Centro de acolhimento";"doutorado";"2013";28;0,000119363790994002
+"Centro de acolhimento";"sem escolaridade";"2013";63;0,000840504302581549
+"Centro de acolhimento";"fundamental incompleto";"2013";1826;0,0243612834367287
+"Centro de acolhimento";"fundamental completo";"2013";1969;0,0262690947902075
+"Centro de acolhimento";"medio incompleto";"2013";928;0,0123807617904076
+"Centro de acolhimento";"medio completo";"2013";8321;0,111013274631446
+"Centro de acolhimento";"superior incompleto";"2013";1432;0,01910479621106
+"Centro de acolhimento";"superior completo";"2013";4485;0,0598359015409246
+"Centro de acolhimento";"especializacao";"2013";652;0,00869855246481222
+"Centro de acolhimento";"mestrado";"2013";54;0,000720432259355613
+"Centro de acolhimento";"doutorado";"2013";2;2,66826762724301e-05
 "Centro POP";"sem escolaridade";"2013";3;0,000374531835205993
 "Centro POP";"fundamental incompleto";"2013";83;0,0103620474406991
 "Centro POP";"fundamental completo";"2013";107;0,0133583021223471
@@ -39,16 +39,16 @@
 "CREAS";"especializacao";"2013";2166;0,0327898632998774
 "CREAS";"mestrado";"2013";157;0,00237673524380459
 "CREAS";"doutorado";"2013";14;0,000211938174606779
-"Centro de acolhimento";"sem escolaridade";"2015";581;0,00247679866312554
-"Centro de acolhimento";"fundamental incompleto";"2015";8913;0,0379960524689121
-"Centro de acolhimento";"fundamental completo";"2015";10246;0,0436786215187337
-"Centro de acolhimento";"medio incompleto";"2015";4517;0,0192559372828538
-"Centro de acolhimento";"medio completo";"2015";34938;0,148940433205301
-"Centro de acolhimento";"superior incompleto";"2015";4117;0,0175507402686538
-"Centro de acolhimento";"superior completo";"2015";17808;0,0759153710721853
-"Centro de acolhimento";"especializacao";"2015";2474;0,0105466435328272
-"Centro de acolhimento";"mestrado";"2015";192;0,000818494566816014
-"Centro de acolhimento";"doutorado";"2015";38;0,000161993716349003
+"Centro de acolhimento";"sem escolaridade";"2015";90;0,00120072043225936
+"Centro de acolhimento";"fundamental incompleto";"2015";2183;0,0291241411513575
+"Centro de acolhimento";"fundamental completo";"2015";2472;0,0329797878727236
+"Centro de acolhimento";"medio incompleto";"2015";1220;0,0162764325261824
+"Centro de acolhimento";"medio completo";"2015";11273;0,150396904809552
+"Centro de acolhimento";"superior incompleto";"2015";1970;0,0262824361283437
+"Centro de acolhimento";"superior completo";"2015";6384;0,085171102661597
+"Centro de acolhimento";"especializacao";"2015";1055;0,0140751117337069
+"Centro de acolhimento";"mestrado";"2015";80;0,00106730705089721
+"Centro de acolhimento";"doutorado";"2015";4;5,33653525448602e-05
 "Centro POP";"sem escolaridade";"2015";8;0,000998751560549313
 "Centro POP";"fundamental incompleto";"2015";137;0,017103620474407
 "Centro POP";"fundamental completo";"2015";144;0,0179775280898876
@@ -79,36 +79,35 @@
 "CREAS";"especializacao";"2015";2275;0,0344399533736016
 "CREAS";"mestrado";"2015";170;0,00257353497736803
 "CREAS";"doutorado";"2015";20;0,000302768820866827
-"Centro de convivência";"sem escolaridade";"2015";339;0,00270057118275458
-"Centro de convivência";"fundamental incompleto";"2015";4019;0,0320165061459902
-"Centro de convivência";"fundamental completo";"2015";4007;0,0319209107058927
-"Centro de convivência";"medio incompleto";"2015";2232;0,0177807518581364
-"Centro de convivência";"medio completo";"2015";18537;0,147671056090624
-"Centro de convivência";"superior incompleto";"2015";7054;0,0561941862039847
-"Centro de convivência";"superior completo";"2015";20597;0,164081606640697
-"Centro de convivência";"especializacao";"2015";3013;0,0240024217511491
-"Centro de convivência";"mestrado";"2015";346;0,00275633518947813
-"Centro de convivência";"doutorado";"2015";80;0,000637302933983382
-"Centro DIA";"sem escolaridade";"2015";115;0,00237299327307994
-"Centro DIA";"fundamental incompleto";"2015";1190;0,0245553216953489
-"Centro DIA";"fundamental completo";"2015";1228;0,025339441211671
-"Centro DIA";"medio incompleto";"2015";492;0,0101522842639594
-"Centro DIA";"medio completo";"2015";4484;0,0925261029260039
-"Centro DIA";"superior incompleto";"2015";1042;0,0215013825265156
-"Centro DIA";"superior completo";"2015";10436;0,215343980850976
-"Centro DIA";"especializacao";"2015";3283;0,0677437992654038
-"Centro DIA";"mestrado";"2015";178;0,00367298089224547
-"Centro DIA";"doutorado";"2015";36;0,00074285006809459
-"Centro de acolhimento";"sem escolaridade";"2017";597;0,00254500654369354
-"Centro de acolhimento";"fundamental incompleto";"2017";8885;0,0378766886779181
-"Centro de acolhimento";"fundamental completo";"2017";10253;0,0437084624664822
-"Centro de acolhimento";"medio incompleto";"2017";4794;0,0204367862151873
-"Centro de acolhimento";"medio completo";"2017";39801;0,169671365905438
-"Centro de acolhimento";"superior incompleto";"2017";4605;0,0196310806259778
-"Centro de acolhimento";"superior completo";"2017";19731;0,0841131057179519
-"Centro de acolhimento";"especializacao";"2017";2736;0,0116635475771282
-"Centro de acolhimento";"mestrado";"2017";221;0,000942121350345516
-"Centro de acolhimento";"doutorado";"2017";44;0,000187571671562003
+"Centro de convivência";"sem escolaridade";"2015";59;0,00144289557348985
+"Centro de convivência";"fundamental incompleto";"2015";1256;0,0307165566153094
+"Centro de convivência";"fundamental completo";"2015";1329;0,0325018341892883
+"Centro de convivência";"medio incompleto";"2015";739;0,0180728784543898
+"Centro de convivência";"medio completo";"2015";7819;0,191220347273172
+"Centro de convivência";"superior incompleto";"2015";2328;0,0569332355099046
+"Centro de convivência";"superior completo";"2015";5192;0,126974810467107
+"Centro de convivência";"especializacao";"2015";815;0,0199315235999022
+"Centro de convivência";"mestrado";"2015";48;0,00117388114453412
+"Centro de convivência";"doutorado";"2015";5;0,00012227928588897
+"Centro DIA";"sem escolaridade";"2015";1;0,000427350427350427
+"Centro DIA";"fundamental incompleto";"2015";45;0,0192307692307692
+"Centro DIA";"fundamental completo";"2015";66;0,0282051282051282
+"Centro DIA";"medio incompleto";"2015";33;0,0141025641025641
+"Centro DIA";"medio completo";"2015";357;0,152564102564103
+"Centro DIA";"superior incompleto";"2015";70;0,0299145299145299
+"Centro DIA";"superior completo";"2015";365;0,155982905982906
+"Centro DIA";"especializacao";"2015";109;0,0465811965811966
+"Centro DIA";"mestrado";"2015";25;0,0106837606837607
+"Centro de acolhimento";"sem escolaridade";"2017";92;0,00122740310853179
+"Centro de acolhimento";"fundamental incompleto";"2017";2010;0,0268160896537923
+"Centro de acolhimento";"fundamental completo";"2017";2371;0,0316323127209659
+"Centro de acolhimento";"medio incompleto";"2017";1314;0,0175305183109866
+"Centro de acolhimento";"medio completo";"2017";12304;0,16415182442799
+"Centro de acolhimento";"superior incompleto";"2017";2184;0,0291374824894937
+"Centro de acolhimento";"superior completo";"2017";6992;0,0932826362484157
+"Centro de acolhimento";"especializacao";"2017";1113;0,0148489093456074
+"Centro de acolhimento";"mestrado";"2017";103;0,00137415782803015
+"Centro de acolhimento";"doutorado";"2017";9;0,000120072043225936
 "Centro POP";"sem escolaridade";"2017";2;0,000249687890137328
 "Centro POP";"fundamental incompleto";"2017";108;0,0134831460674157
 "Centro POP";"fundamental completo";"2017";134;0,016729088639201
@@ -138,23 +137,22 @@
 "CREAS";"especializacao";"2017";2482;0,0375736106695732
 "CREAS";"mestrado";"2017";219;0,00331531858849176
 "CREAS";"doutorado";"2017";25;0,000378461026083534
-"Centro de convivência";"sem escolaridade";"2017";323;0,00257311059595791
-"Centro de convivência";"fundamental incompleto";"2017";4083;0,0325263484931769
-"Centro de convivência";"fundamental completo";"2017";4073;0,032446685626429
-"Centro de convivência";"medio incompleto";"2017";2499;0,0199077504003059
-"Centro de convivência";"medio completo";"2017";20083;0,159986935289853
-"Centro de convivência";"superior incompleto";"2017";7164;0,0570704777382119
-"Centro de convivência";"superior completo";"2017";23115;0,184140716487824
-"Centro de convivência";"especializacao";"2017";3545;0,0282404862621386
-"Centro de convivência";"mestrado";"2017";331;0,00263684088935624
-"Centro de convivência";"doutorado";"2017";89;0,000708999514056513
-"Centro DIA";"sem escolaridade";"2017";114;0,0023523585489662
-"Centro DIA";"fundamental incompleto";"2017";1243;0,0256489620733771
-"Centro DIA";"fundamental completo";"2017";1436;0,0296314638273286
-"Centro DIA";"medio incompleto";"2017";639;0,013185588708679
-"Centro DIA";"medio completo";"2017";5423;0,111902108868804
-"Centro DIA";"superior incompleto";"2017";1321;0,0272584705542487
-"Centro DIA";"superior completo";"2017";11992;0,247451611571953
-"Centro DIA";"especializacao";"2017";3595;0,0741818331888903
-"Centro DIA";"mestrado";"2017";168;0,00346663365110808
-"Centro DIA";"doutorado";"2017";47;0,000969832033345714
+"Centro de convivência";"sem escolaridade";"2017";78;0,00190755685986794
+"Centro de convivência";"fundamental incompleto";"2017";1251;0,0305942773294204
+"Centro de convivência";"fundamental completo";"2017";1337;0,0326974810467107
+"Centro de convivência";"medio incompleto";"2017";825;0,0201760821716801
+"Centro de convivência";"medio completo";"2017";8470;0,207141110295916
+"Centro de convivência";"superior incompleto";"2017";2301;0,0562729273661042
+"Centro de convivência";"superior completo";"2017";6058;0,148153582783077
+"Centro de convivência";"especializacao";"2017";913;0,022328197603326
+"Centro de convivência";"mestrado";"2017";63;0,00154071900220103
+"Centro de convivência";"doutorado";"2017";4;9,78234287111763e-05
+"Centro DIA";"sem escolaridade";"2017";2;0,000854700854700855
+"Centro DIA";"fundamental incompleto";"2017";59;0,0252136752136752
+"Centro DIA";"fundamental completo";"2017";66;0,0282051282051282
+"Centro DIA";"medio incompleto";"2017";40;0,0170940170940171
+"Centro DIA";"medio completo";"2017";434;0,185470085470085
+"Centro DIA";"superior incompleto";"2017";85;0,0363247863247863
+"Centro DIA";"superior completo";"2017";469;0,20042735042735
+"Centro DIA";"especializacao";"2017";107;0,0457264957264957
+"Centro DIA";"mestrado";"2017";7;0,00299145299145299

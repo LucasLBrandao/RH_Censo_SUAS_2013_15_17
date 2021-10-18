@@ -1,10 +1,13 @@
 library(tidyverse)
 
-source("./R/load2015.R",encoding = "UTF-8")
+source("./R/1. load2015.R",encoding = "UTF-8")
 
 # Selecionando colunas -------
+
+
 acolhimento_2015 <- acolhimento_2015 %>% 
-        select(UF,
+        select(id_acolhimento,
+               UF,
                IBGE,
                IBGE7,
                Município = Municipio_2013,
@@ -14,8 +17,15 @@ acolhimento_2015 <- acolhimento_2015 %>%
                Vínculo = q44_10,
                Função = q44_11,
                Idade = D44_2,
-               Faixa_idade = D44_2_categoria) %>% 
-        mutate(alocação = "Centro de acolhimento")
+               Faixa_idade = D44_2_categoria,
+               esfera = q1,
+               gov = q5) %>% 
+        mutate(alocação = "Centro de acolhimento",
+               proteção = "PSE de alta complexidade")
+
+CREAS_2015_dadosgerais <- read_excel("./input/Censo SUAS 2015/CREAS/CensoSUAS2015_CREAS_DadosGerais_Divulgação.xlsx",
+                               sheet = 1) %>% select(NU_identificador,q2)
+
 POP_2015 <- POP_2015 %>% 
          select(UF,
                IBGE,
@@ -29,7 +39,10 @@ POP_2015 <- POP_2015 %>%
                Idade = D39_2,
                Faixa_idade = D39_2categoria) %>% 
         mutate(alocação = "Centro POP",
-               Idade = as.numeric(Idade)) 
+               Idade = as.numeric(Idade),
+               proteção = "PSE de média complexidade",
+               esfera = "Municipal",
+               gov = "Governamental")
         #left_join(municipios, by = c("IBGE" = "id")) %>% 
         #rename(Município = nome)
 
@@ -42,7 +55,9 @@ cons_estad_2015 <- cons_estad_2015 %>%
                Vínculo = q63_7,
                Idade = D63_2,
                Faixa_idade = D63_2_categoria) %>% 
-        mutate(alocação = "Conselho estadual")
+        mutate(alocação = "Conselho estadual",
+               esfera = "Estadual",
+               gov = "Governamental" )
 
 
 cons_mun_2015 <- cons_mun_2015 %>%  
@@ -56,7 +71,9 @@ cons_mun_2015 <- cons_mun_2015 %>%
                Vínculo = q63_7,
                Idade = D63_2,
                Faixa_idade = D63_2_categoria) %>% 
-        mutate(alocação = "Conselho município")
+        mutate(alocação = "Conselho município",
+               esfera = "Municipal",
+               gov = "Governamental")
 
 
 CRAS_2015 <- CRAS_2015 %>% 
@@ -72,11 +89,17 @@ CRAS_2015 <- CRAS_2015 %>%
                Idade = d55_2,
                Faixa_idade = d55_2_categoria) %>% 
         mutate(Idade = as.numeric(Idade),
-               alocação = "CRAS")
+               alocação = "CRAS",
+               esfera = "Municipal",
+               proteção = "PS básica",
+               gov = "Governamental")
+
+
 
 
 CREAS_2015 <- CREAS_2015 %>% 
-        select(UF,
+        select(NU_identificador,
+               UF,
                IBGE=IBGE6,
                IBGE7,
                Município,
@@ -87,10 +110,19 @@ CREAS_2015 <- CREAS_2015 %>%
                Função = q47_11,
                Idade = D47_2,
                Faixa_idade = D47_2_categoria) %>% 
-        mutate(alocação = "CREAS")
+        left_join(CREAS_2015_dadosgerais) %>% 
+        rename(esfera = q2) %>% 
+        mutate(alocação = "CREAS",
+               proteção = "PSE de média complexidade",
+               gov = "Governamental") %>% 
+        select(-NU_identificador)
+
+conviv_2015_dadosgerais <- read_excel("./input/Censo SUAS 2015/Centro de Convivência/CensoSUAS_2015_Convivencia_DadosGerais_divulgacao.xlsx",
+                                      sheet = 1) %>% select(NU_IDENTIFICADOR,q2)
 
 conviv_2015 <- conviv_2015 %>% 
-        select(UF,
+        select(NU_IDENTIFICADOR,
+               UF,
                IBGE,
                IBGE7,
                Município,
@@ -101,10 +133,19 @@ conviv_2015 <- conviv_2015 %>%
                Função = q31_11,
                Idade = d31_2,
                Faixa_idade = d31_2_categoria) %>% 
-        mutate(alocação = "Centro de convivência")
+        left_join(conviv_2015_dadosgerais) %>% 
+        rename(gov = q2) %>% 
+        mutate(alocação = "Centro de convivência",
+               esfera = "Municipal",
+               proteção = "PS Básica")
+
+
+DIA_2015_dadosgerais <- read_excel("./input/Censo SUAS 2015/Centro DIA/CensoSUAS_2015_CentroDIA_dadosgerais_divulgacao.xlsx",
+                                   sheet = 1) %>% select(NU_IDENTIFICADOR,q6)
 
 DIA_2015 <- DIA_2015 %>% 
-        select(UF,
+        select(NU_IDENTIFICADOR,
+               UF,
                IBGE,
                IBGE7,
                Município,
@@ -115,7 +156,11 @@ DIA_2015 <- DIA_2015 %>%
                Função = q40_11,
                Idade = d40_2,
                Faixa_idade = d40_2_categoria) %>% 
-        mutate(alocação = "Centro DIA")
+        left_join(DIA_2015_dadosgerais) %>% 
+        rename(gov = q6) %>% 
+        mutate(alocação = "Centro DIA",
+               esfera = ifelse(NU_IDENTIFICADOR %in% c(3304553501209,5002703501139,5208703500526,5300103501130),"Estadual","Municipal"),
+               proteção = "diversos")
         
 # Unindo os dados --------
 

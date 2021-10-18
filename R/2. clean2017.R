@@ -3,8 +3,13 @@ library(tidyverse)
 source("./R/1. load2017.R",encoding = "UTF-8")
 
 # Selecionando colunas -------
+
+
+acolhimento_2017_dadosgerais <- read_excel("./input/Censo SUAS 2017/Unidades_Acolhimento/Censo Suas 2017 Unidades de Acolhimento_divulgação.xlsx",
+                               sheet = 1) %>% select(id_acolhimento,q3,q7)
 acolhimento_2017 <- acolhimento_2017 %>% 
-        select(UF,
+        select(id_acolhimento,
+               UF,
                IBGE,
                IBGE7,
                Município = Municipio_2013,
@@ -15,9 +20,18 @@ acolhimento_2017 <- acolhimento_2017 %>%
                Função = q42.12,
                Idade = D42.2,
                Faixa_idade = D42.2.categoria) %>% 
-        mutate(alocação = "Centro de acolhimento")
+        left_join(acolhimento_2017_dadosgerais) %>% 
+        rename(esfera = q7,
+               gov = q3) %>% 
+        mutate(alocação = "Centro de acolhimento",
+               proteção = "PSE de alta complexidade")
+
+CREAS_2017_dadosgerais <- read_excel("./input/Censo SUAS 2017/CREAS/Censo SUAS 2017_CREAS_divulgacao.xlsx",
+                               sheet = 1) %>% select(NU_identificador,q2)
+
 POP_2017 <- POP_2017 %>% 
-         select(UF,
+         select(id_creas_pop,
+                UF,
                IBGE,
                IBGE7,
                Município = Municipio_2013,
@@ -28,10 +42,14 @@ POP_2017 <- POP_2017 %>%
                Função = q44.10,
                Idade = D44.2,
                Faixa_idade = D44.2categoria) %>% 
+        left_join(CREAS_2017_dadosgerais, by = c("id_creas_pop" = "NU_identificador")) %>% 
+        rename(esfera = q2) %>% 
         mutate(alocação = "Centro POP",
-               Idade = as.numeric(Idade)) 
-        #left_join(municipios, by = c("IBGE" = "id")) %>% 
-        #rename(Município = nome)
+               Idade = as.numeric(Idade),
+               proteção = "PSE de média complexidade",
+               gov = "Governamental") %>% 
+        select( -id_creas_pop)
+ 
 cons_estad_2017 <- cons_estad_2017 %>% 
          select(UF = UF_n,
                 Sexo = q81.3,
@@ -39,7 +57,9 @@ cons_estad_2017 <- cons_estad_2017 %>%
                Função = q81.7,
                Idade,
                Faixa_idade = Faixas.etarias) %>% 
-        mutate(alocação = "Conselho estadual")
+        mutate(alocação = "Conselho estadual",
+               esfera = "Estadual",
+               gov = "Governamental")
 
 
 cons_mun_2017 <- cons_mun_2017 %>%  
@@ -52,7 +72,9 @@ cons_mun_2017 <- cons_mun_2017 %>%
                Função = q81.7,
                Idade,
                Faixa_idade = Faixas.etarias) %>% 
-        mutate(alocação = "Conselho município")
+        mutate(alocação = "Conselho município",
+               esfera = "Municipal",
+               gov = "Governamental")
 
 
 CRAS_2017 <- CRAS_2017 %>% 
@@ -68,11 +90,15 @@ CRAS_2017 <- CRAS_2017 %>%
                Idade = D52.2,
                Faixa_idade = D52.2.FaixasEtarias) %>% 
         mutate(Idade = as.numeric(Idade),
-               alocação = "CRAS")
+               alocação = "CRAS",
+               esfera = "Municipal",
+               proteção = "PS básica",
+               gov = "Governamental")
 
 
 CREAS_2017 <- CREAS_2017 %>% 
-        select(UF,
+        select(NU_identificador,
+               UF,
                IBGE,
                IBGE7,
                Município = Municipio_2013,
@@ -83,10 +109,18 @@ CREAS_2017 <- CREAS_2017 %>%
                Função = q62.9,
                Idade = D62_2,
                Faixa_idade = D62_2_categoria) %>% 
-        mutate(alocação = "CREAS")
+        left_join(CREAS_2017_dadosgerais) %>% 
+        rename(esfera = q2) %>% 
+        mutate(alocação = "CREAS",
+               proteção = "PSE de média complexidade",
+               gov = "Governamental")
+
+DIA_2017_dadosgerais <- read_excel("./input/Censo SUAS 2017/Centro DIA/CensoSUAS2017_CentroDIA_DG_divulgacao.xlsx",
+                       sheet = 1) %>% select(NU_IDENTIFICADOR,q1,q4)
 
 DIA_2017 <- DIA_2017 %>% 
-        select(UF,
+        select(NU_IDENTIFICADOR,
+               UF,
                IBGE,
                IBGE7,
                Município = Municipio_2013,
@@ -96,11 +130,20 @@ DIA_2017 <- DIA_2017 %>%
                Vínculo = q35_vinc,
                Função = q35_func,
                Idade = d35_idade,
-               Faixa_idade = d35_idade_categoria) %>% 
-        mutate(alocação = "Centro DIA")
+               Faixa_idade = d35_idade_categoria) %>%
+        left_join(DIA_2017_dadosgerais) %>% 
+        rename(esfera = q1,
+               gov = q4) %>% 
+        mutate(alocação = "Centro DIA",
+               proteção = "diversos") %>% 
+        select(-NU_IDENTIFICADOR)
+
+conviv_2017_dadosgerais <- read_excel("./input/Censo SUAS 2017/Centro_Convivencia/CensoSUAS2017_Convivencia_DG_divulgacao.xlsx",
+                          sheet = 1) %>% select(NU_IDENTIFICADOR,q1,q2)
 
 conviv_2017 <- conviv_2017 %>% 
-        select(UF,
+        select(NU_IDENTIFICADOR,
+               UF,
                IBGE,
                IBGE7,
                Município = Municipio_2013,
@@ -111,10 +154,19 @@ conviv_2017 <- conviv_2017 %>%
                Função = q31_func,
                Idade = d31_idade,
                Faixa_idade = d31_idade_categoria) %>% 
-        mutate(alocação = "Centro de convivência")
+        left_join(conviv_2017_dadosgerais) %>% 
+        rename(esfera = q1,
+               gov = q2) %>% 
+        mutate(alocação = "Centro de convivência",
+               proteção = "PS básica") %>% 
+        select(-NU_IDENTIFICADOR)
+
+familia_2017_dadosgerais <- read_excel("./input/Censo SUAS 2017/Família Acolhedora/Censo SUAS 2017_Família Acolhedora_divulgação.xlsx",
+                          sheet = 1) %>% select(NºIDENTIFICADOR,q.6,q.2)
 
 familia_2017 <- familia_2017 %>% 
-         select(UF,
+         select(NºIDENTIFICADOR,
+                UF,
                IBGE,
                IBGE7,
                Município = Municipio_2013,
@@ -124,7 +176,12 @@ familia_2017 <- familia_2017 %>%
                Vínculo = q.30.11,
                Função = q.30.12,
                Faixa_idade = D30.2.FaixasEtarias) %>% 
-        mutate(alocação = "Família acolhedora")
+        left_join(familia_2017_dadosgerais) %>% 
+        rename(esfera = q.6,
+               gov = q.2) %>% 
+        mutate(alocação = "Família acolhedora",
+               proteção = "PSE de alta complexidade") %>% 
+        select(-NºIDENTIFICADOR)
         
 # Unindo os dados --------
 
@@ -136,7 +193,8 @@ SUAS_2017 <- bind_rows(
           CRAS_2017 ,
           CREAS_2017,
           conviv_2017,
-          DIA_2017)
+          DIA_2017,
+        familia_2017)
 
 
 # Limpando os dados -----
